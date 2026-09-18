@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Estilaser — Centre Médico-esthétique</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#fbf4eb;
+  color:#2c211b;
+  line-height:1.6;
+}
+
+nav{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:#fffaf4;
+  border-bottom:1px solid #eadbca;
+  padding:18px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-family:Georgia,serif;
+  font-size:28px;
+  color:#b28a52;
+  font-weight:bold;
+}
+
+nav a{
+  text-decoration:none;
+  color:#2c211b;
+  margin-left:20px;
+}
+
+.hero{
+  text-align:center;
+  padding:90px 20px;
+  background:linear-gradient(135deg,#fffaf4,#f3e2cf);
+}
+
+.hero h1{
+  font-family:Georgia,serif;
+  font-size:52px;
+  color:#b28a52;
+  margin-bottom:10px;
+}
+
+.hero p{
+  font-size:18px;
+  margin-bottom:25px;
+}
+
+.btn{
+  display:inline-block;
+  padding:13px 24px;
+  border-radius:30px;
+  background:#b28a52;
+  color:white;
+  text-decoration:none;
+  margin:5px;
+}
+
+section{
+  padding:65px 6%;
+}
+
+.title{
+  text-align:center;
+  font-family:Georgia,serif;
+  font-size:34px;
+  color:#b28a52;
+  margin-bottom:35px;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+.card h3{
+  color:#b28a52;
+  margin-bottom:10px;
+}
+
+.price{
+  font-size:20px;
+  font-weight:bold;
+  margin-top:12px;
+}
+
+.offers{
+  max-width:800px;
+  margin:auto;
+}
+
+.offer{
+  background:white;
+  padding:22px;
+  margin:15px 0;
+  border-radius:15px;
+  border-left:4px solid #b28a52;
+}
+
+form{
+  max-width:600px;
+  margin:auto;
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+input,select{
+  width:100%;
+  padding:14px;
+  margin:8px 0 15px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  font-size:15px;
+}
+
+button{
+  width:100%;
+  border:0;
+  padding:15px;
+  border-radius:30px;
+  background:#25D366;
+  color:white;
+  font-size:17px;
+  cursor:pointer;
+}
+
+.contact{
+  text-align:center;
+  background:#fffaf4;
+}
+
+.contact p{
+  margin:10px;
+}
+
+footer{
+  text-align:center;
+  padding:25px;
+  background:#2c211b;
+  color:white;
+}
+
+@media(max-width:600px){
+  nav{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  nav a{
+    margin:0 7px;
+    font-size:13px;
+  }
+
+  .hero h1{
+    font-size:40px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Estilaser</div>
+
+  <div>
+    <a href="#services">Services</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#reservation">Réservation</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+
+  <h1>Estilaser</h1>
+
+  <p>Centre Médico-esthétique</p>
+
+  <p>
+    Votre beauté, notre expertise.
+  </p>
+
+  <a class="btn" href="#reservation">
+    Prendre rendez-vous
+  </a>
+
+  <a class="btn"
+     href="https://wa.me/212665848087"
+     target="_blank">
+    WhatsApp
+  </a>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Nos Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Épilation Laser</h3>
+<p>Épilation laser professionnelle.</p>
+<p class="price">Tarif sur demande</p>
+</div>
+
+<div class="card">
+<h3>Hydrafacial</h3>
+<p>Hydrafacial 12 étapes.</p>
+<p class="price">À partir de 200 DH</p>
+</div>
+
+<div class="card">
+<h3>Amincissement</h3>
+<p>Programmes d'amincissement.</p>
+<p class="price">Tarif sur demande</p>
+</div>
+
+<div class="card">
+<h3>Microneedling</h3>
+<p>Soin esthétique professionnel.</p>
+<p class="price">Tarif sur demande</p>
+</div>
+
+<div class="card">
+<h3>Lifting Brésilien</h3>
+<p>Pack de 10 séances.</p>
+<p class="price">750 DH / 10 séances</p>
+</div>
+
+<div class="card">
+<h3>Cupping</h3>
+<p>Hijama sèche et humide.</p>
+<p class="price">À partir de 100 DH</p>
+</div>
+
+<div class="card">
+<h3>Détatouage</h3>
+<p>Traitement esthétique du tatouage.</p>
+<p class="price">Tarif sur demande</p>
+</div>
+
+<div class="card">
+<h3>Carbon Peel</h3>
+<p>Soin esthétique du visage.</p>
+<p class="price">Tarif sur demande</p>
+</div>
+
+<div class="card">
+<h3>Blanchiment Dentaire</h3>
+<p>Soin esthétique dentaire.</p>
+<p class="price">Tarif sur demande</p>
+</div>
+
+</div>
+</section>
+
+<section id="tarifs">
+
+<h2 class="title">Nos Packs Cupping</h2>
+
+<div class="offers">
+
+<div class="offer">
+<h3>Pack Duo — 100 DH</h3>
+<p>Hijama sèche + Hijama humide</p>
+</div>
+
+<div class="offer">
+<h3>Pack Trio — 150 DH</h3>
+<p>Hijama sèche + humide + Massage Gun</p>
+</div>
+
+<div class="offer">
+<h3>Full Pack — 200 DH</h3>
+<p>
+Hijama sèche + humide + Massage Gun
++ Pressothérapie
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="reservation">
+
+<h2 class="title">Réserver un rendez-vous</h2>
+
+<form onsubmit="reservation(event)">
+
+<label>Nom complet</label>
+
+<input
+  id="name"
+  type="text"
+  placeholder="Votre nom"
+  required
+>
+
+<label>Téléphone</label>
+
+<input
+  id="phone"
+  type="tel"
+  placeholder="Votre numéro"
+  required
+>
+
+<label>Service</label>
+
+<select id="service" required>
+
+<option value="">Choisir un service</option>
+
+<option>Épilation Laser</option>
+<option>Hydrafacial</option>
+<option>Amincissement</option>
+<option>Microneedling</option>
+<option>Lifting Brésilien</option>
+<option>Cupping</option>
+<option>Détatouage</option>
+<option>Carbon Peel</option>
+<option>Blanchiment Dentaire</option>
+
+</select>
+
+<label>Date souhaitée</label>
+
+<input id="date" type="date" required>
+
+<label>Heure souhaitée</label>
+
+<input id="time" type="time" required>
+
+<button type="submit">
+Réserver via WhatsApp
+</button>
+
+</form>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="title">Contact</h2>
+
+<p>📞
